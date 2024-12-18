@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/heatdiff/__init__.py
+src/heatdiff/compression.py
+src/heatdiff/euler_marayumas.py
+src/heatdiff/heat_equations.py
+src/heatdiff/heat_kernel_utils.py
+src/heatdiff/image_accuracy.py
+src/heatdiff/image_preprocessing.py
+src/heatdiff/plotting_utils.py
+src/heatdiff/weighted_kmeans.py
+src/heatdiffs.egg-info/PKG-INFO
+src/heatdiffs.egg-info/SOURCES.txt
+src/heatdiffs.egg-info/dependency_links.txt
+src/heatdiffs.egg-info/requires.txt
+src/heatdiffs.egg-info/top_level.txt

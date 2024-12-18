@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: heatdiffs
+Version: 0.1.0
+Summary: A package for image processing using the heat semigroup.
+Author-email: Jason Ledwidge <jason.ledwidge@jos-quantum.de>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: scipy>=1.11.3
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: opencv-python>=4.10.0.84
+Requires-Dist: scikit-image>=0.24.0
+
+# Heatdiff
+
+The aim of this initial release is to demonstrate how the heat semigroup can be used as a lossy compression tool for image processing, in particular, for image corruption and restoration.  
+
+We also demonstrate that the heat semigroup can be used for image compression, via its use as a kernel in a weighted K-Means algorithm.
+
+In addition, we will demonstrate that explicit diffusion equations can also be used as lossy compression for images. One can view this method as a 'learning free' denoising diffusion model. We replicate the experiments for the heat semigroup with diffusion equations, using their appropriate analogues. 
+
+In the future, we aim to investigate further topics such as: regularised image restoration; lossless compression; and the integration of machine learning tools amongst others.
+
+# Installation
+
+```bash
+pip install heatdiff
+```
+
+# Examples
+
+The following notebooks demonstrate the most relevant features:
+
+- [Heat Semigroup](notebooks/semigroup_demo.ipynb)
+- [Diffusion Process](notebooks/diffusion_demo.ipynb)
+
