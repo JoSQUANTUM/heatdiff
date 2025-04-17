@@ -1,23 +1,29 @@
-# Heatdiff
+# heatdiff
 
-The aim of this initial release is to demonstrate how the heat semigroup can be used as a lossy compression tool for image processing, in particular, for image corruption and restoration.  
+Image processing algorithms based on the heat semigroup.
 
-We also demonstrate that the heat semigroup can be used for image compression, via its use as a kernel in a weighted K-Means algorithm.
-
-In addition, we will demonstrate that explicit diffusion equations can also be used as lossy compression for images. One can view this method as a 'learning free' denoising diffusion model. We replicate the experiments for the heat semigroup with diffusion equations, using their appropriate analogues. 
-
-In the future, we aim to investigate further topics such as: regularised image restoration; lossless compression; and the integration of machine learning tools amongst others.
-
-# Installation
+## Installation
 
 ```bash
-pip install heatdiff
+pip install .
 ```
 
-# Examples
+## Description
 
-The following notebooks demonstrate the most relevant features:
+In this repository, we aim to demonstrate the application of the heat semigroup to a variety of image processing tasks such as
 
-- [Heat Semigroup](notebooks/semigroup_demo.ipynb)
-- [Diffusion Process](notebooks/diffusion_demo.ipynb)
+- A lossy compression tool for image processing, in particular, for image corruption and restoration (and it's stochastic analogue). One can conceptually view this method as a 'learning free' denoising diffusion model.  
+See the following notebooks for more details:
+    - [Heat Semigroup process](notebooks/semigroup_demo.ipynb)
+    - [Diffusion Process](notebooks/diffusion_demo.ipynb)
 
+- Image compression, via its use as a kernel in a weighted K-Means algorithm. See the above notebooks
+
+- Image Segmentation, via the heat semigroup approximation of the Perimeter functional. See [Heat Semigroup Segmentation](notebooks/segmentation_demo.ipynb)
+
+In the future, we aim to investigate further topics such as: 
+- Regularised image restoration.
+
+- The integration of machine learning tools/integration into machine learning pipelines. 
+
+- Lossless compression.
